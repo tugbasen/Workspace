@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Programlama</title>
+    <!--Tarayıcıda web sayfasının isminin görüntülenmesini sağlar-->
+    <meta charset="UTF-8">
+    <!--We sayfası içerisindeki Türkçe Karakterlerin Görüntülenmesini sağlar-->
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    body {
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #919191;
+        background-color: #232323;
+    }
+
+    header,
+    footer {
+        width: 960px;
+        margin: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 22px;
+        font-weight: normal;
+        font-style: italic;
+        line-height: normal;
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    form,
+    fieldset,
+    legend {
+        border: none;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    .cerceve1 {
+        width: 100%;
+        text-align: left;
+        color: #c0bab6;
+        background-color: #333333;
+    }
+
+    header {
+        padding: 20px;
+        width: 960px;
+
+    }
+
+    header #logogroup {
+        float: left;
+        margin: 0, 0, 20px, 0;
+    }
+
+    header #logogroup h1 {
+        font-size: 36px;
+    }
+
+    header #logogroup h2 {
+        font-size: 13px;
+    }
+
+    header form {
+        width: 290px;
+        float: right;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    header form input {
+        float: left;
+        width: 200px;
+        margin: 0;
+        padding: 5px;
+        color: #c0bab6;
+        background-color: #232323;
+        border: 1px solid #666666;
+    }
+
+    header form #ara {
+        float: right;
+        width: 70px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #ff9900;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0;
+        padding: 0px, 0;
+        color: #c0bab6;
+        background-color: #ff9900;
+        clear: both;
+    }
+
+    header nav ul {
+        padding: 0, 20px;
+    }
+
+    header nav li {
+        display: inline;
+        margin-right: 25px;
+        text-transform: uppercase;
+    }
+
+    header nav li a {
+        color: #333333;
+    }
+
+    header nav li a:hover {
+        color: #ffffff;
+    }
+
+    .cerceve2 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: #979797;
+        background-color: #ffffff;
+    }
+
+    .clear::after {
+        content: ".";
+        display: block;
+    }
+
+    #container {
+        width: 960px;
+        margin: 0 auto;
+        padding: 30px, 0;
+
+    }
+
+    #container section {
+        display: block;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    #container .last {
+        margin: 0;
+
+    }
+
+    #container .more {
+        text-align: right;
+    }
+
+    #container #slider {
+        width: 100%;
+    }
+
+    #container #slider figure img {
+        float: right;
+        width: 630px;
+        height: 300px;
+    }
+
+    #container #slider figure figcaption {
+        float: left;
+        width: 290px;
+        height: 260px;
+        padding: 20px;
+        color: #989898;
+        background-color: #464646;
+        line-height: 20px;
+    }
+
+    #container #slider figure figcaption {
+        color: #ff9900;
+        background-color: #464646;
+
+    }
+
+    #container #slider figure h2 {
+        font-size: 42px;
+    }
+
+    #container #intro {
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+    }
+
+    #container #intro section .aciklama {
+        width: 470px;
+        float: left;
+        margin: 0, 20px, 0, 0;
+
+    }
+
+    #container #intro section .ek {
+        margin-right: 0;
+    }
+
+    #container #intro section article h2 {
+        margin-bottom: 15px;
+    }
+
+    #container #intro section article figure ul {
+        list-style: none;
+    }
+
+    #container #intro section article figure li {
+        float: left;
+        margin: 0, 20px, 0, 0;
+    }
+
+    #container #intro section article figure li .last {
+        margin-right: 0;
+    }
+
+    #container #intro section article figure li img {
+        width: 130px;
+        height: 130px;
+        padding: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d6d6d6;
+    }
+
+    #container #intro section article figure figcaption a {
+        color: orange;
+    }
+    .cerceve3{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: #919191;
+        background-color: #232323;
+    }
+    footer{
+        padding: 20px, 0;
+    }
+    footer nav{display: inline;}
+    footer nav li{padding: 4px; border-right: 1px solid white; display: inline;}
+    footer nav li:last-child{border: none;}
+    footer a{color: white;,}
+    footer a:hover{color: orange;}
+</style>
+
+<body>
+    <div class="cerceve1">
+        <header>
+            <div id="logogroup">
+                <h1><a href="#">Site Logosu</a></h1>
+                <h2>Site Açıklama</h2>
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend>Arama</legend>
+                    <input type="text" value="Site içi arama">
+                    <input type="submit" id="ara" value="Ara">
+                </fieldset>
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımızda</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="#,php.heml">PHP</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+
+    </div>
+    </header>
+    </div>
+    <div class="cerceve2">
+        <div id="container" class="clear">
+            <section id="slider" class="clear">
+                <figure>
+                    <img src="image/gri.jpg.crdownload" alt="">
+                    <figcaption>
+                        <h2>Programlama Dilleri</h2>
+                        <p>Phyton çok popüler ve kolay öğrenilen bir programlama dilidir.</p>
+                        <p>Google Flutter mobil uygulamalar kodlayabileceğiniz bir platformdur.</p>
+                        <footer class="devam"><a href="#">Devamını oku &raquo;</a></footer>
+                    </figcaption>
+                </figure>
+            </section>
+            <div id="intro">
+                <section class="clear">
+                    <article class="aciklama">
+                        <h2>Başlık</h2>
+                        <p>Açıklama Açıklama Açıklama Açıklama Açıklama Açıklama Açıklama Açıklama Açıklama Açıklama
+                        </p>
+                    </article>
+                    <article class="aciklama ek">
+                        <figure>
+                            <ul class="clear">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/130.jpg" width="130" height="130" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/130.jpg" width="130" height="130" alt="">
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a href="#">
+                                        <img src="image/130.jpg" width="130" height="130" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <figcaption><a href="#">Resim Galerisi &raquo;</a></figcaption>
+                        </figure>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="cerceve3">
+        <footer id="footer">
+            <nav>
+                <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+            <p style="float: right;">Copyright &copy; 2020 - <a href="#">Levent Ert</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

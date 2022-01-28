@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list1{
+            list-style-type: none;
+           
+            list-style-position: inside;
+        }
+        .list1 li::before{
+            content: '';
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            background-image: url(img/cizgifilm.jpg);
+            background-size: 20px;
+            
+        }
+        .list2{
+            list-style-type: square;
+            list-style-position: inside;
+        }
+        .list3{
+            list-style: circle;
+            list-style-position: inside;
+        }
+        .list4{
+            list-style: circle inside none;
+    
+        }
+    </style>
+</head>
+<body>
+    <ul class="list1">
+        Liste1
+        <li>Eleman1</li>
+        <li>Eleman2</li>
+        <li>Eleman3</li>
+    </ul>
+       
+    <ul class="list2">
+        Liste2
+        <li>Eleman1</li>
+        <li>Eleman2</li>
+        <li>Eleman3</li>
+    </ul>
+    <ul class="list3">
+        Liste3
+        <li>Eleman1</li>
+        <li>Eleman2</li>
+        <li>Eleman3</li>
+    </ul>
+    <ul class="list4">
+        Liste4
+        <li>Eleman1</li>
+        <li>Eleman2</li>
+        <li>Eleman3</li>
+    </ul>
+
+</body>
+</html>

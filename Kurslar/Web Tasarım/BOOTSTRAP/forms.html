@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+</head>
+
+<body class="p-5">
+    <form>
+        <div class="form-group">
+            <label for="name">Adınız: </label>
+            <input type="text" id="name" class="form-control" placeholder="Adınızı Giriniz">
+        </div>
+        <div class="form-group mt-3">
+            <label for="surname">Soyadınız: </label>
+            <input type="text" id="surname" class="form-control" placeholder="Soyadınızı Giriniz">
+        </div>
+        <div class="form-group mt-3">
+            <label for="email">Email Adresiniz: </label>
+            <input type="email" id="email" class="form-control" placeholder="Email Adresinizi Giriniz">
+            <small class="form-text text-muted">Email adesi girmek zorunludur</small>
+        </div>
+        <div class="form-group mt-3">
+            <label for="password">Parolanız: </label>
+            <input type="password" id="password" class="form-control" placeholder="Parolanızı Giriniz">
+        </div>
+
+        <div class="form-group mt-4">
+            <label for="city">Doğum Yeriniz:</label>
+            <select name="city" id="city" class="form-control">
+                <option value="34">İstanbul</option>
+                <option value="6">Ankara</option>
+                <option value="35">İzmir</option>
+                <option value="41">Kocaeli</option>
+                <option value="26">Eskişehir</option>
+            </select>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="message">Mesajınız: </label>
+            <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+
+
+        <div class="form-group mt-3">
+            <legend>Hobileriniz:</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Voleybol
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Basketbol
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Tenis
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Yüzme
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Atletizm
+                </label>
+            </div>
+        </div>
+
+
+        <div class="custom-control custom-checkbox mt-4">
+            <input type="checkbox" id="cb" class="custom-control-input">
+            <label class="custom-control-label" for="cb">Checkbox</label>
+        </div>
+
+
+        <div class="custom-control custom-radio mt-4">
+            <input type="radio" id="rb" class="custom-control-input">
+            <label class="custom-control-label" for="rb">RadioButton</label>
+        </div>
+
+        <div class="input-group mt-3">
+            <input type="text" class="form-control">
+            <div class="inpıt-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="ig">http://instagram.com</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

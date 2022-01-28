@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        img[width="50%"]{
+            border: 5px solid black;
+        }
+        p[title^="bu"]{
+            color: red;
+        }
+        p[title$="paragraf"]{
+            color: blue;
+        }
+        a[href="https://www.google.com"]:visited{
+            color: red;
+        }
+        a[target="_blank"]{
+            color: yellow;
+        }
+        a[href="https://www.google.com"][target="_blank"]{
+            color: violet;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="cizgifilm.jpg" width="50%" alt="" title="tom">
+    <br><br>
+    <img src="burj.jpg" width="50%" alt="">
+    <img src="eser.jpg" width="60%" alt="">
+    <p title="bu bir paragraftır">Paragraf 1</p>
+    <p title="bu bir paragraf değildir">Paragraf 2</p>
+    <p title="bir paragraf">Paragraf 3</p>
+    <a href="https://www.google.com" target="_blank">GOOGLE'a GİT</a>
+    <br>
+    <a href="https://www.google.com">GOOGLE'a GİT</a>
+    <br>
+    <a href="https://www.youtube.com" target="_blank">YOUTUBE'a GİT</a>
+</body>
+</html>

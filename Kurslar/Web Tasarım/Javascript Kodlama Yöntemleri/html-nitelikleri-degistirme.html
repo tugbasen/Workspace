@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px;">
+    <h2>Elementin niteliğini değiştirme</h2>
+    <input type="text" id="degistirilecekElement" value="Bu bir veri giriş alanı">
+    <button onclick="degistir();">Değştir</button>
+    <script>
+        function degistir() {
+            document.getElementsByTagNameNS('input')['degistirilecekElement'].setAttribute('type', 'button');
+            document.getElementsByTagNameNS('input')['degistirilecekElement'].setAttribute('value', 'bu bir buton elementi');
+        }
+    </script>
+</body>
+
+</html>

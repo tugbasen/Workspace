@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div {
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            color: orangered;
+        }
+
+        #KaanAcademy {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(img/space.jfif);
+            background-size: 100% 300px;
+        }
+
+        .KaanAcademyYazi {
+            font-size: 20px;
+            text-shadow: 0px 0px 1px black;
+            background-color: lightgreen;
+
+        }
+        .kurslarimiz{
+            
+            width: 100%;
+            float: left;
+            font-weight: bold;
+        }
+        .kurslarimiz1{
+            padding-top: 10px;
+            width: 33.33%;
+            float: left;
+           
+            
+        }
+        .kurslarimiz1:nth-child(1){
+            background: url(img/sandal.jfif) no-repeat;
+            background-size: 100% 300px;
+            
+        }
+        .kurslarimiz1:nth-child(1){
+          color: turquoise;
+        }
+        .kurslarimiz1:nth-child(2){
+            background: url(img/orman.jfif) no-repeat;
+            background-size: 100% 300px;
+            
+        }
+        .kurslarimiz1:nth-child(2){
+          color: green;
+        }
+        .kurslarimiz1:nth-child(3){
+            background: url(img/deniz.jfif) no-repeat;
+            background-size: 100% 300px;
+            
+        }
+        .kurslarimiz1:nth-child(3){
+          color: purple;
+        }
+        #Hakkimizda{
+            clear: both;
+            background-color: tomato;
+            height: 330px;
+            color: black;
+        }
+        #Hakkimizda img{
+            border: 5px dashed black;
+            margin-top: 20px;
+        }
+        #Hakkimizda p{
+            white-space: pre-line;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        #Hakkimizda p::first-line{
+            font-weight: bold;
+            text-decoration: underline;
+            letter-spacing: 3px; 
+        }
+        @media screen and (max width: 992px){
+            .kurslarimiz1{
+                width: 100%;
+            }
+        }
+        #Hakkimizda{
+            margin-top: 900px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="KaanAcademy">
+        <span class="KaanAcademyYazi">
+            Kaan Academy yazılım dünyasnda çokça kullanılan teknolojileri insanlara anlaşılır bir biçimde aktarmayı
+            amaçlamaktadır
+        </span>
+    </div>
+    <div>
+        <div class="kurslarimiz">
+            <div class="kurslarimiz1">
+                Bu bir kış mevsimidir.
+                <p>
+                    Denizde bir sandal var.
+                </p>
+            </div>
+            <div class="kurslarimiz1">
+                Bu bir ormandır.
+                <p>
+                    Ağaçlar doğanın güzellikleridir.
+                </p>
+            </div>
+            <div class="kurslarimiz1">
+                Bu bir denizdirç
+                <p>
+                    Denizler insanı rahatlatır.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Hakkimizda">
+        <img src="img/space.jfif" width="330px" height="200px">
+        <p>
+            Kaan Academy
+            nice insanlar yetiştirmeye devam ediyor.
+        </p>
+    </div>
+</body>
+
+</html>

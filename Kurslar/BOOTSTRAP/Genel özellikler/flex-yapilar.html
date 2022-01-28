@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex( Esnek kutu yapıları)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        .kapsayici {
+            max-width: 800px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kapsayici d-flex bg-light flex-md-row flex-column">
+        <div class="kutu border">Flex Kutu1</div>
+        <div class="kutu border">Flex Kutu2</div>
+        <div class="kutu border">Flex Kutu3</div>
+    </div>
+
+    <div class="kapsayici d-flex bg-light flex-wrap align-content-stretch">
+        <div class="kutu border mr-3 order-1 order-lg-2">Flex Kutu1</div>
+        <div class="kutu border mr-3">Flex Kutu2</div>
+        <div class="kutu border mr-3">Flex Kutu3</div>
+        <div class="kutu border mr-3">Flex Kutu4</div>
+        <div class="kutu border mr-3 order-2 order-lg-1">Flex Kutu5</div>
+        <div class="kutu border mr-3">Flex Kutu6</div>
+        <div class="kutu border mr-3">Flex Kutu7</div>
+        <div class="kutu border mr-3">Flex Kutu8</div>
+        <div class="kutu border mr-3">Flex Kutu9</div>
+        <div class="kutu border mr-3">Flex Kutu10</div>
+        <div class="kutu border mr-3">Flex Kutu11</div>
+        <div class="kutu border mr-3">Flex Kutu12</div>
+    </div>
+    <hr>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

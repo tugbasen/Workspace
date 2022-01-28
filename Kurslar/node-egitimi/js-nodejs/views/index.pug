@@ -1,0 +1,37 @@
+html
+    head 
+        title merhaba pug
+    body 
+
+        - var okul = 'kocaeli üniversitesi';
+        - var sehir = 'kocaeli'
+
+        =okul
+        br
+        | bulunduğu şehir #{sehir.toUpperCase()}
+        hr
+
+        -var sayi=13;
+
+        if !sayi
+            | sayı değişkeni yok 
+        else if sayi==12
+            | sayı 12
+        else 
+            | sayı 12 değil
+        br
+        =job
+        br
+        span(style="color: white; background-color:black") 
+            | merhaba #{name}
+
+        br
+        include footer.pug
+
+        hr
+        br
+
+        ul
+            each val in [1, 2, 3, 4, 5]
+                li= val 
+        

@@ -1,0 +1,93 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+div {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: orangered;
+}
+
+#kaanacademy {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(img/logo.jfif);
+    background-size: 100% 300px;
+}
+
+.kaanacademyyazi {
+    font-size: 20px;
+    text-shadow: 0px 0px 1px black;
+    background-color: lightgreen;
+
+}
+.kurslarimiz{
+ 
+    width: 100%;
+    float: left;
+    font-weight: bold;
+
+}
+.kurslarimiz1{
+    padding-top: 10px;
+    width: 33.33%;
+    float: left;
+  
+}
+.kurslarimiz1:nth-child(1){
+    background: url(img/coding.jfif) no-repeat;
+    background-size: 100% 300px;            
+}
+.kurslarimiz1:nth-child(1) p{
+   color: turquoise;         
+}
+.kurslarimiz1:nth-child(2){
+    background: url(img/software.jfif) no-repeat;
+    background-size: 100% 300px;            
+}
+.kurslarimiz1:nth-child(2) p{
+   color: green;         
+}
+.kurslarimiz1:nth-child(3){
+    background: url(img/laptop.jfif) no-repeat;
+    background-size: 100% 300px;            
+}
+.kurslarimiz1:nth-child(3) p{
+    color: purple;
+}   
+
+#hakkimizda{
+    clear: both;
+    background-color: tomato;
+    height: 330px;
+    color: black;
+}
+#hakkimizda img{
+    width: 200px;
+    height: 200px;
+    border: 5px dashed black;
+    margin-top: 20px;
+}
+#hakkimizda p{
+    white-space: pre-line;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#hakkimizda p::first-line{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+@media screen and (max-width: 992px){
+    .kurslarimiz1{
+        width: 100%;
+    }
+    #hakkimizda{
+        margin-top: 900px;
+        height: 350px;
+    }
+    #hakkimizda img{
+      
+        margin-top: 40px;
+    }
+}
