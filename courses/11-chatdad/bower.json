@@ -1,0 +1,17 @@
+{
+  "name": "chatdad",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Tugba Sen <tugba.sen.tr@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/tugbasen/chatdad",
+  "dependencies": {
+    "angular": "^1.8.2"
+  }
+}
